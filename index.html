@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="shortcut icon" href="./img/logo_blanco.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="./css/style.css"> 
+    <script src="js/main.js" defer></script>
+    <title>Academlo Store</title>
+
+</head>
+<body>
+    <header id="main_header" class="fixed-header">
+        <div class="logo">
+            <img src="img/logo_nombre.png" alt="Logo de la tienda">
+        </div>       
+        <div class="carrito">
+            <span id="cart-count">0</span>
+            <button id="carrito-btn"><i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </header>
+
+   <div class="cart-container">  
+        <ul class="cart-list">
+            <!-- Aquí se agregarán los elementos de la lista de productos en el carrito -->
+        </ul>   
+        
+        <div class="total-section">
+            <p>Total a pagar: $<span id="total-amount">0.00</span></p>
+            <button id="buy-button" class="purchase-button">Realizar compra</button>
+        </div>
+    </div>
+
+    <section class="nueva-seccion">
+        <img src="./img/logo_blanco.png" alt="Imagen de la nueva sección">
+    </section>
+
+    <div class="contenedor-elementos">
+        <h2 class="titulo">Todos nuestros productos</h2>
+    
+        <select id="opciones" class="seleccion">
+            
+        </select>
+    </div>
+
+    <section class="section">
+        <div class="products">
+
+        </div>
+    </section>
+
+    <div id="product-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="top_section">
+                <h2 id="modal-name"></h2>
+                <p id="modal-price"></p>
+                <p id="offer">50% OFF</p>
+            </div> 
+            
+            <div class="contenedor">
+                <div class="left-section">
+                    <img id="modal-image" src="" alt="Imagen del producto">
+                </div>
+                <div class="right-section">                
+                    <h4>Descripcion</h4>
+                    <p id="modal-description"></p>
+                    <h4>Composicion</h4>
+                    <p>100% poliester</p>
+                    <h4>Composicion</h4>
+                    <p>- No secar</p>
+                    <p>- No usar secadora</p>
+                  
+
+                </div>
+
+            </div>
+        </div>       
+    </div>
+</body>
+</html>
